@@ -56,23 +56,53 @@ Every template in ZPlate adheres to:
 
 ## Template Categories
 
-### 1. Basics (5 templates)
-Learn fundamental FHEVM patterns - encrypted state, operations, permissions
+### Basics
+| Template | Description |
+|---|---|
+| `base-template` | Foundation template with complete FHEVM Hardhat setup |
+| `fhe-counter` | Simplest encrypted counter demonstrating encrypted state and basic arithmetic |
+| `fhe-simple-vault` | Single-user encrypted vault for deposits/withdrawals and balance tracking |
+| `fhe-voting` | Yes/No encrypted voting with tallying and permission patterns |
+| `fhe-operations` | Full reference of FHE operations (arithmetic, comparisons, boolean, bitwise) |
+| `fhe-random` | Encrypted random number generation (dice, fair randomness patterns) |
 
-### 2. Encryption/Decryption (4 templates)
-Master input encryption, gateway decryption, and permission systems
+### Encryption / Decryption
+| Template | Description |
+|---|---|
+| `encrypt-single` | Accept and store a single encrypted user input with proof binding |
+| `encrypt-multiple` | Accept and store multiple encrypted values (bool, uint, address) in one call |
+| `decrypt-user` | User decryption pattern showing correct permission ordering and an anti-pattern example |
+| `decrypt-gateway` | Two-phase gateway decryption pattern for public revelation via relayer/gateway |
 
-### 3. DeFi (5 templates)
-Build confidential financial applications - vaults, auctions, tokens
+### DeFi
+| Template | Description |
+|---|---|
+| `confidential-bank` | Multi-user confidential bank: deposits, withdrawals, transfers with private balances |
+| `confidential-token` | ERC7984 confidential token implementation and operator patterns |
+| `sealed-auction` | NFT blind/sealed auction using encrypted bids and encrypted winner reveal |
+| `dutch-auction` | Descending-price auction with confidential purchase amounts and dynamic pricing |
+| `confidential-airdrop` | Private airdrop distribution with confidential amounts and claim patterns |
 
-### 4. Gaming (3 templates)
-Create privacy-preserving games - wordle, dice, rock-paper-scissors
+### Gaming
+| Template | Description |
+|---|---|
+| `fhe-wordle` | Encrypted Wordle-style game with Merkle-proofed guesses and encrypted feedback computation |
+| `dice-game` | Betting game built on encrypted random dice rolls and encrypted payouts |
+| `rock-paper-scissors` | Two-player commit-reveal game using encrypted moves and reveal flow |
 
-### 5. Governance (2 templates)
-Implement confidential voting and governance mechanisms
+### Governance
+| Template | Description |
+|---|---|
+| `confidential-voting` | DAO proposal voting with encrypted vote counts and delegation patterns |
+| `quadratic-voting` | Quadratic voting where allocations and costs are handled confidentially |
 
-### 6. Advanced (4 templates)
-Advanced patterns - compliance, wrapped tokens, complex workflows
+### Advanced
+| Template | Description |
+|---|---|
+| `eth-wrapper` | Confidential ETH wrapper patterns and helpers for ETH-like assets |
+| `token-swap` | Confidential token swap examples and cross-token operations |
+| `vesting-wallet` | Encrypted vesting wallet patterns for time-locked confidential allocations |
+| `freezable-compliance` | Compliance primitives (freeze/unfreeze, policy enforcement) for confidential tokens |
 
 ## Contributing
 
