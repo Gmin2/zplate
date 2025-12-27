@@ -1,6 +1,6 @@
 {
-  "name": "@zcraft/template-base",
-  "description": "Base template for FHEVM smart contract development",
+  "name": "@zcraft/template-sealed-auction",
+  "description": "Sealed Auction - NFT auction with encrypted bids to prevent sniping",
   "version": "1.0.0",
   "engines": {
     "node": ">=20",
@@ -16,10 +16,11 @@
     "fhevm",
     "fhe",
     "zama",
-    "basic",
-    "arithmetic",
-    "counter",
-    "beginner"
+    "defi",
+    "auction",
+    "nft",
+    "sealed-bid",
+    "advanced"
   ],
   "dependencies": {
     "encrypted-types": "^0.0.4",
