@@ -32,7 +32,7 @@ export async function highlight(code: string, lang: BundledLanguage, theme?: str
                             ' bg-white/5 border-l-2 border-l-amber-500/50'
                     }
                 },
-                token(node: any, line: number, col: number) {
+                span(node: any, line: number, col: number) {
                     // Strong highlight for specific tokens
                     const matches = highlightConfig?.tokens?.filter(
                         t => t.line === line && t.column === col
