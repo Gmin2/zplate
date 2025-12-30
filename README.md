@@ -124,4 +124,6 @@ BSD-3-Clause-Clear
 
 ---
 
+![alt text](image.png)
+
 **Built by Zama** | Making encryption work on encrypted data
