@@ -9,7 +9,6 @@ cache/
 typechain-types/
 types/
 dist/
-lib/
 
 # Coverage
 coverage/
